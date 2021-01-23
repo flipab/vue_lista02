@@ -9,7 +9,14 @@ export default {
   name: 'App',
   components: {
     
-  }
+  },//adicionando array de todos
+  data( {
+    return{
+      todos: [
+
+      ]
+    }
+  })
 }
 </script>
 
