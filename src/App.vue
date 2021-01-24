@@ -22,24 +22,7 @@ export default {
   },//adicionando array de todos
   data() {
     return {
-      todos: [ 
-      {
-        id: 1,
-        title: "Ítem 01",
-        completed: false
-      },
-       {
-        id: 2,
-        title: "Ítem 02",
-        completed: false
-      },
-       {
-        id: 3,
-        title: "Ítem 03",
-        completed: false
-      }
-
-      ]
+      todos: []
     } 
   },
   methods: {
@@ -47,8 +30,11 @@ export default {
       this.todos = this.todos.filter(todo => todo.id !== id);
     },
     addTodo(newTodo) {
-      this.todos = [...this.todos, newTodo];
+      this.todos = [...this.todos, newTodo]; //spread operator?
     }
+  },
+  created() {
+    
   }
 }
 </script>
