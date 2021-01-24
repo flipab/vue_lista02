@@ -1,7 +1,7 @@
 <template>
   <div>
-      <form>
-          <input type="text" placeholder="Adicione sua tarefa aqui">
+      <form @submit="@addTodo">
+          <input type="text" v-model="title" placeholder="Adicione sua tarefa aqui">
           <input type="submit" value="Submit" class="btn">
       </form>
   </div>
@@ -10,7 +10,19 @@
 <script >
 
 export default {
-    name: "AddTodo"
+    name: "AddTodo",
+    data() {
+        return {
+            title: ''
+        }
+    },
+    methods: {
+        addTodo() {
+            const newTodo = {
+                id:
+            }
+        }
+    }
     
 }
 </script>
