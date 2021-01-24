@@ -1,6 +1,6 @@
 <template>
   <div>
-      <form @submit="@addTodo">
+      <form @submit="addTodo">
           <input type="text" v-model="title" placeholder="Adicione sua tarefa aqui">
           <input type="submit" value="Submit" class="btn">
       </form>
@@ -8,7 +8,7 @@
 </template>
 
 <script >
-
+import uuid from 'uuid';
 export default {
     name: "AddTodo",
     data() {
@@ -17,10 +17,16 @@ export default {
         }
     },
     methods: {
-        addTodo() {
+        addTodo(e) {
+            e.preventDefault();
             const newTodo = {
-                id:
+                id: uuid.v4(), //uuid pesquisar...cria id unica?
+                title: this.title,
+                completed: false 
             }
+            //send up to parent
+            this.$emit('add-todo', newTodo);
+            this.title = '';
         }
     }
     
