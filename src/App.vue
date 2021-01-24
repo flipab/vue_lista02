@@ -19,7 +19,7 @@ export default {
       {
         id: 1,
         title: "Ítem 01",
-        completed: true
+        completed: false
       },
        {
         id: 2,
@@ -29,7 +29,7 @@ export default {
        {
         id: 3,
         title: "Ítem 03",
-        completed: true
+        completed: false
       }
 
       ]
