@@ -8,7 +8,7 @@
 </template>
 
 <script >
-import uuid from 'uuid';
+//import uuid from 'uuid';//removi pois o json placeholder já vem com id
 export default {
     name: "AddTodo",
     data() {
@@ -20,7 +20,7 @@ export default {
         addTodo(e) {
             e.preventDefault();
             const newTodo = {
-                id: uuid.v4(), //uuid pesquisar...cria id unica?
+              //  id: uuid.v4(), //uuid pesquisar...cria id unica? //removi pois o json placeholder já vem com id
                 title: this.title,
                 completed: false 
             }
