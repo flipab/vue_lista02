@@ -18,17 +18,17 @@ export default {
       todos: [ 
       {
         id: 1,
-        title: "Todo 01",
+        title: "Ítem 01",
         completed: true
       },
        {
         id: 2,
-        title: "Todo 02",
+        title: "Ítem 02",
         completed: true
       },
        {
         id: 3,
-        title: "Todo 03",
+        title: "Ítem 03",
         completed: true
       }
 
