@@ -36,12 +36,12 @@ export default {
         title,
         completed 
         })
-        .then(res => this.todos = [...this.todos, res.data])//spread operator?
+        .then(res => this.todos = [...this.todos, res.data])//spread operator? o que é?
         .catch(err => console.log(err));
     }
   },
   created() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5') //usando o axios (fetch api) para importar os todos de uma pagina
       .then(res => this.todos = res.data)
       .catch(err => console.log(err));
   }
