@@ -26,6 +26,7 @@ export default {
     background: #f4f4f4;
     padding: 2%;
     padding-left: 5%;
+    padding-right: 5%;
     border-bottom: 1px #ccc dotted;
 }
 .is-complete {
