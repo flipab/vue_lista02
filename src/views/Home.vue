@@ -27,7 +27,7 @@ export default {
   methods: {
      deleteTodo(id) {
       axios.delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
-        .then(res => this.todos = this.todos.filter(todo => todo.id !== id)[res.data])
+        .then(res => this.todos = this.todos.filter(todo => todo.id !== id)[res.data])//aqui esta o problema!!
         .catch(err => console.log(err));
              
     },
